@@ -13,6 +13,7 @@
 <body>
     <div class="min-h-full">
         <x-navbar></x-navbar>
+        <!-- data yang dikirimkan dari x-slot:title digunakna di bawah ini -->
         <x-header>{{ $title }}</x-header>
         <main>
             <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
