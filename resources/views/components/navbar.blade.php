@@ -18,6 +18,9 @@
         </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
+        <!-- href akan dimasukkan ke $attributes di x-nav-link -->
+        <!-- active adalah atribut buatan sendiri -->
+        <!-- titik dua diawal gunanya agar bisa mengirimkan boolean -->
         <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
         <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
         <x-nav-link href="/blog" :active="request()->is('blog')">Blog</x-nav-link>
