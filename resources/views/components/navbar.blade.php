@@ -23,7 +23,7 @@
         <!-- titik dua diawal gunanya agar bisa mengirimkan boolean -->
         <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
         <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-        <x-nav-link href="/blog" :active="request()->is('blog')">Blog</x-nav-link>
+        <x-nav-link href="/posts" :active="request()->is('posts')">Blog</x-nav-link>
         <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -36,7 +36,7 @@
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-50"></div>
         <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#1f2936] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
                     <span class="sr-only">Your Company</span>
@@ -54,14 +54,10 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                        <a href="/"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-300 hover:bg-gray-700">Home</a>
-                        <a href="/about"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-300 hover:bg-gray-700">About</a>
-                        <a href="/blog"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-300 hover:bg-gray-700">Blog</a>
-                        <a href="/contact"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-300 hover:bg-gray-700">Contact</a>
+                        <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+                        <x-nav-link href="/posts" :active="request()->is('posts')">Blog</x-nav-link>
+                        <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+                        <x-nav-link href="/contact" :active="request()->is('/')">Contact</x-nav-link>
                     </div>
                     <div class="py-6">
                         <a href="#"
