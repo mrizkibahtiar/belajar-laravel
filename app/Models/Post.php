@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 // secara default gabungnya dengan tabel posts(jamak)
 class Post extends Model
 {
+    use HasFactory;
 
      // jika nama tabel beda pakai cara ini
     // protected $table = "blog_posts"; // versi jamaknya
